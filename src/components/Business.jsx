@@ -34,7 +34,7 @@ function Business() {
       <div className={`${layout.sectionInfo}`}>
         <h2 className={styles.heading2}> You do the business, we’ll <br className="sm:block md:hidden" /> handle the money.</h2>
         <p className={`${styles.paragraph} max-w-[450px]`}>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
-        {/* <Button ></Button> */}
+        <Button styles={`mt-10`} />
       </div>
    
 
@@ -42,7 +42,7 @@ function Business() {
       <div className={`${layout.sectionImg} flex-col `}>
 
         {features.map((feature,index)=>(
-          <FeatureCard {...feature} index={index} ></FeatureCard>
+          <FeatureCard {...feature} key={feature.id} index={index} ></FeatureCard>
         ))} 
       </div>]
     </section>
