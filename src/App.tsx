@@ -1,4 +1,4 @@
-import React from "react"
+
 
 import './index.css';
 // @ts-ignore
@@ -7,7 +7,7 @@ import styles from './style.js';
 // @ts-ignore
 import './constants/index.js'
 // @ts-ignore
-// import styles from './style.js' 
+
 // @ts-ignore
 
 import {  Navbar, Billing,  CardDeal,  Business,  Client,  CTA,  Stats,  Fotter,  Testimonial,Button , Hero} from './components'
