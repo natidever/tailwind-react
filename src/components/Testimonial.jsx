@@ -1,45 +1,31 @@
 import React from 'react'
 import styles from '../style'
 import { quotes } from '../assets'
+import FeedbackCard from './FeadbackCard'
 import {features, feedback} from '../constants'
 function Testimonial() {
   return (
-   <section className='flex flex-col'>
-    <div className="md:flex md:flex-row items-center sm:flex-col">
-      <h2  className={`${styles.heading2}`}>What people are <br className=" " /> saying about us</h2>
-      <p className={`${styles.paragraph } mt-10 mr-40`}>Everything you need to accept card payments and grow your business anywhere on the planet.</p>
+    <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
+   
+    <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+
+    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">    
+      <h2 className={styles.heading2}>
+
+        What People are <br className="sm:block hidden" /> saying about us
+      </h2>
+      <div className="w-full md:mt-0 mt-6">
+        <p className={`${styles.paragraph} text-left max-w-[450px]`}>
+          Everything you need to accept card payments and grow your business
+          anywhere on the planet.
+        </p>
+      </div>
     </div>
 
-      <div className="flex flex-row gap-5">
-      {feedback.map((feedbacks,index)=>(
-         
-        <div className="flex flex-col w-[330px] h-[355px] bg-black-gradient rounded-[20px] relative">
-        <img src={quotes} alt="" className="w-[42px] h-[27.6pxx] mt-20 ml-5" />
-        <p className={`${styles.paragraph} p-5`}>{ feedbacks.content }</p>
-        <div className="flex flex-row pr-2">
-          <img src={feedbacks.img} className="w-[48px] h-[48px] absolute md:bottom-10 md:left-5" />
-          <div className="md:relative md:top-[40px] md:left-[100px] md:bottom-[-50px] flex flex-col text-white ">
-            <h2>{feedbacks.name}</h2>
-            <p>{feedbacks.title}</p>
-          </div>
-        </div>
-      </div>
-     
-    
-
-  ))
-  }
-
-      </div>
-    
-
-
-
-
-
-    
-
-   </section>
+    <div className="flex flex-wrap sm:justify-start justify-center w-full ml-20 feedback-container relative z-[1] mr-10">
+      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
+    </div>
+  </section>
   )
 }
 

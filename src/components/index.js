@@ -8,7 +8,7 @@ import Stats from "./Stats";
 import Fotter from "./Fotter";
 import Testimonial from "./Testimonial";
 import Hero from "./Hero";
-
+import Button from "./Button"
 export {
   Navbar,
   Billing,
@@ -20,4 +20,5 @@ export {
   Fotter,
   Testimonial,
   Hero,
+  Button
 };

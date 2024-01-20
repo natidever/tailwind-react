@@ -9,10 +9,14 @@ module.exports = {
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage:theme=>({
+        'blue-gradient': 'linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%)',
+      })
     },
     screens: {
       xs: "480px",

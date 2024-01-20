@@ -52,14 +52,14 @@ export const feedback = [
     title: "Founder & Leader",
     img: people01,
   },
-  {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
+  // {
+  //   id: "feedback-2",
+  //   content:
+  //     "Money makes your life easier. If you're lucky to have it, you're lucky.",
+  //   name: "Steve Mark",
+  //   title: "Founder & Leader",
+  //   img: people02,
+  // },
   {
     id: "feedback-3",
     content:

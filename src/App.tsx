@@ -10,7 +10,7 @@ import './constants/index.js'
 // import styles from './style.js' 
 // @ts-ignore
 
-import {  Navbar, Billing,  CardDeal,  Business,  Client,  CTA,  Stats,  Fotter,  Testimonial,  Hero,} from './components'
+import {  Navbar, Billing,  CardDeal,  Business,  Client,  CTA,  Stats,  Fotter,  Testimonial,Button , Hero} from './components'
 
 
 
@@ -51,11 +51,15 @@ function App() {
  
       <div className = "bg-primary sm:px-16 px-6 justify-center items-start"  >
         <div className=" xl:max-w-[1280px] w-full">
+         
           <Stats/>
           <Business/>
           <Billing/>
           <CardDeal/>
           <Testimonial/>
+          <CTA/>
+          <Fotter/>
+          {/* <Client/> */}
         </div>
       </div>
 
